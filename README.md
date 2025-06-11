@@ -1,4 +1,3 @@
-```markdown
 # CIFAR Autoencoder for Image Restoration 🧠🖼️
 
 This project implements a convolutional autoencoder trained on the CIFAR-10 dataset. The autoencoder learns to reconstruct original images from damaged (noisy) inputs, making it useful for tasks like denoising or minor image restoration.
