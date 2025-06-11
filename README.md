@@ -226,5 +226,3 @@ This script evaluates the model and visualizes its performance:
 
 ---
 
-```
-```
