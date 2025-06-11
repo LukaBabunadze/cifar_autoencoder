@@ -5,6 +5,7 @@ from utils.noise import add_noise
 from models.autoencoder import Autoencoder
 from config import *
 import torch
+import torchvision.utils as vutils
 
 testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transforms.ToTensor())
 testloader = torch.utils.data.DataLoader(testset, batch_size=10, shuffle=True)
@@ -24,6 +25,11 @@ def show(orig, noisy, output):
     axs[1].imshow(noisy.permute(1, 2, 0))
     axs[2].imshow(output.permute(1, 2, 0).cpu())
     for ax in axs: ax.axis('off')
+    vutils.save_image(imgs[0], "samples/original.png")
+    vutils.save_image(noisy_imgs[0], "samples/noisy.png")
+    vutils.save_image(outputs[0], "samples/reconstructed.png")
     plt.show()
 
 show(imgs[0], noisy_imgs[0], outputs[0])
+
+
