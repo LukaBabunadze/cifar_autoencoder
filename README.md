@@ -134,8 +134,7 @@ This script handles the complete training loop:
    ```python
    transform = transforms.ToTensor()
    trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
-   trainloader = DataLoader(trainset, batch_size=BATCH_SIZE, shuffle=True)
-````
+   trainloader = DataLoader(trainset, batch_size=BATCH_SIZE, shuffle=True)```
 
 3. **Model, Loss, Optimizer**
 
