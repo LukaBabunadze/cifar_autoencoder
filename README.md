@@ -119,10 +119,6 @@ DEVICE = 'cuda' or 'cpu'
 
 ---
 
-
-````markdown
----
-
 ## 🧠 Code Explanation
 
 ### 🏋️‍♂️ `train.py` – Training the Autoencoder
